@@ -1,7 +1,11 @@
-numero = int(input("Insira um número: "))
-if numero >= 1:
-        for i in range(1, numero):
-            if numero % i != 0:
-                print(numero, 'é primo')
+number = int(input('Numero: '))
+ePrimo = 0
+
+for i in range(1, (number + 1)):        
+  if number % i == 0:
+    ePrimo += 1
+    
+if ePrimo  == 2 :
+  print('primo')
 else:
-            print(numero, 'não é primo')
+  print('nao primo')
